@@ -63,6 +63,17 @@
       }
     }
     </script>
+    <script>
+        // Deteksi host & path project
+        const { origin, pathname } = window.location;
+
+        // Ambil folder project kalau bukan di root (contoh: /namaproject/)
+        const basePath = pathname.includes('/') ? pathname.split('/')[1] : '';
+        const baseURL = basePath ? `${origin}/${basePath}/` : `${origin}/`;
+
+        // Fungsi bantu untuk ambil URL file
+        const asset = (path) => `${baseURL}${path}`;
+    </script>
 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
@@ -251,7 +262,8 @@
             <!-- <h4 class="text-yellow-500 text-sm font-semibold mb-2">SAHABAT GEOTEKNIK</h4> -->
             <h2 data-aos="fade-down" class="text-3xl md:text-4xl font-bold mb-10">Kenapa Memilih Kami</h2>
             <div class="grid grid-cols-2 lg:grid-cols-3 gap-10">
-                <div data-aos="fade-up" data-aos-duration="400" class="bg-blue-900 p-6 rounded-xl shadow-lg hover:-translate-y-2 transition-all duration-300">
+                <div data-aos="fade-up" data-aos-duration="400"
+                    class="bg-blue-900 p-6 rounded-xl shadow-lg hover:-translate-y-2 transition-all duration-300">
                     <div class="-mt-20 p-5 bg-yellow-400 rounded-full text-center inline-block">
                         <i data-lucide="biceps-flexed" class="w-7 h-7 text-blue-900"></i>
                     </div>
@@ -260,7 +272,8 @@
                         investigasi tanah, dan hidrografi yang berpengalaman dalam berbagai proyek skala kecil hingga
                         besar.</p>
                 </div>
-                <div data-aos="fade-up" data-aos-duration="600" class="bg-blue-900 p-6 rounded-xl shadow-lg hover:-translate-y-2 transition-all duration-300">
+                <div data-aos="fade-up" data-aos-duration="600"
+                    class="bg-blue-900 p-6 rounded-xl shadow-lg hover:-translate-y-2 transition-all duration-300">
                     <div class="-mt-20 p-5 bg-yellow-400 rounded-full text-center inline-block">
                         <i data-lucide="monitor-check" class="w-7 h-7 text-blue-900"></i>
                     </div>
@@ -268,7 +281,8 @@
                     <p class="text-white text-sm">Kami menggunakan teknologi dan peralatan terkini untuk memastikan
                         setiap hasil pengukuran dan analisis memiliki tingkat akurasi tinggi.</p>
                 </div>
-                <div data-aos="fade-up" data-aos-duration="800" class="bg-blue-900 p-6 rounded-xl shadow-lg hover:-translate-y-2 transition-all duration-300">
+                <div data-aos="fade-up" data-aos-duration="800"
+                    class="bg-blue-900 p-6 rounded-xl shadow-lg hover:-translate-y-2 transition-all duration-300">
                     <div class="-mt-20 p-5 bg-yellow-400 rounded-full text-center inline-block">
                         <i data-lucide="alarm-clock-check" class="w-7 h-7 text-blue-900"></i>
                     </div>
@@ -276,7 +290,8 @@
                     <p class="text-white text-sm">Kami berkomitmen memberikan hasil kerja terbaik dengan ketepatan waktu
                         sesuai kebutuhan proyek tanpa mengurangi kualitas.</p>
                 </div>
-                <div data-aos="fade-up" data-aos-duration="400" class="bg-blue-900 p-6 rounded-xl shadow-lg hover:-translate-y-2 transition-all duration-300">
+                <div data-aos="fade-up" data-aos-duration="400"
+                    class="bg-blue-900 p-6 rounded-xl shadow-lg hover:-translate-y-2 transition-all duration-300">
                     <div class="-mt-20 p-5 bg-yellow-400 rounded-full text-center inline-block">
                         <i data-lucide="hard-hat" class="w-7 h-7 text-blue-900"></i>
                     </div>
@@ -286,7 +301,8 @@
                         prioritas utama dalam setiap pekerjaan yang kami lakukan.
                     </p>
                 </div>
-                <div data-aos="fade-up" data-aos-duration="600" class="bg-blue-900 p-6 rounded-xl shadow-lg hover:-translate-y-2 transition-all duration-300">
+                <div data-aos="fade-up" data-aos-duration="600"
+                    class="bg-blue-900 p-6 rounded-xl shadow-lg hover:-translate-y-2 transition-all duration-300">
                     <div class="-mt-20 p-5 bg-yellow-400 rounded-full text-center inline-block">
                         <i data-lucide="hand-platter" class="w-7 h-7 text-blue-900"></i>
                     </div>
@@ -296,7 +312,8 @@
                         memastikan kepuasan klien dari awal hingga akhir proyek.
                     </p>
                 </div>
-                <div data-aos="fade-up" data-aos-duration="800" class="bg-blue-900 p-6 rounded-xl shadow-lg hover:-translate-y-2 transition-all duration-300">
+                <div data-aos="fade-up" data-aos-duration="800"
+                    class="bg-blue-900 p-6 rounded-xl shadow-lg hover:-translate-y-2 transition-all duration-300">
                     <div class="-mt-20 p-5 bg-yellow-400 rounded-full text-center inline-block">
                         <i data-lucide="wallet" class="w-7 h-7 text-blue-900"></i>
                     </div>

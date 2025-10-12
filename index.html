@@ -69,6 +69,11 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="config.js"></script>
+    <script>
+        // Set base href otomatis dari file config
+        document.write(`<base href="${CONFIG.BASE_URL}">`);
+    </script>
 </head>
 
 <body class="font-sans text-gray-800">
@@ -278,25 +283,32 @@
             <!-- Swiper Container -->
             <div class="swiper clientSwiper">
                 <div class="swiper-wrapper items-center">
-                    <div data-aos="fade-up" data-aos-duration="400" class="swiper-slide flex items-center justify-center">
+                    <div data-aos="fade-up" data-aos-duration="400"
+                        class="swiper-slide flex items-center justify-center">
                         <img src="/assets/image/brands/brand1.avif" alt="Adaro" class="h-20 object-contain" />
                     </div>
-                    <div data-aos="fade-up" data-aos-duration="600" class="swiper-slide flex items-center justify-center">
+                    <div data-aos="fade-up" data-aos-duration="600"
+                        class="swiper-slide flex items-center justify-center">
                         <img src="/assets/image/brands/brand2.avif" alt="Angkasa Pura" class="h-20 object-contain" />
                     </div>
-                    <div data-aos="fade-up" data-aos-duration="800" class="swiper-slide flex items-center justify-center">
+                    <div data-aos="fade-up" data-aos-duration="800"
+                        class="swiper-slide flex items-center justify-center">
                         <img src="/assets/image/brands/brand3.avif" alt="Pama" class="h-20 object-contain" />
                     </div>
-                    <div data-aos="fade-up" data-aos-duration="1000" class="swiper-slide flex items-center justify-center">
+                    <div data-aos="fade-up" data-aos-duration="1000"
+                        class="swiper-slide flex items-center justify-center">
                         <img src="/assets/image/brands/brand4.avif" alt="Pertamina" class="h-20 object-contain" />
                     </div>
-                    <div data-aos="fade-up" data-aos-duration="1200" class="swiper-slide flex items-center justify-center">
+                    <div data-aos="fade-up" data-aos-duration="1200"
+                        class="swiper-slide flex items-center justify-center">
                         <img src="/assets/image/brands/brand5.avif" alt="Semen Baturaja" class="h-20 object-contain" />
                     </div>
-                    <div data-aos="fade-up" data-aos-duration="1400" class="swiper-slide flex items-center justify-center">
+                    <div data-aos="fade-up" data-aos-duration="1400"
+                        class="swiper-slide flex items-center justify-center">
                         <img src="/assets/image/brands/brand6.avif" alt="Petrosea" class="h-20 object-contain" />
                     </div>
-                    <div data-aos="fade-up" data-aos-duration="1600" class="swiper-slide flex items-center justify-center">
+                    <div data-aos="fade-up" data-aos-duration="1600"
+                        class="swiper-slide flex items-center justify-center">
                         <img src="/assets/image/brands/brand7.avif" alt="PP" class="h-20 object-contain" />
                     </div>
                 </div>
@@ -308,7 +320,8 @@
     <section
         class="relative bg-[url('/assets/image/other/map.png')] bg-blue-900 bg-blend-overlay text-white py-20 overflow-hidden">
         <div class="max-w-7xl mx-auto px-6 text-center relative z-10">
-            <h3 data-aos="fade-down" class="text-yellow-400 text-sm font-semibold tracking-widest uppercase mb-3">Saudara Geoteknik</h3>
+            <h3 data-aos="fade-down" class="text-yellow-400 text-sm font-semibold tracking-widest uppercase mb-3">
+                Saudara Geoteknik</h3>
             <h2 data-aos="fade-up" class="text-4xl md:text-5xl font-bold mb-14 leading-tight">
                 Mitra Profesional & Terpercaya untuk Jasa Sondir Bekasi
             </h2>
@@ -362,17 +375,21 @@
     <!-- Layanan Lengkap -->
     <section id="layanan" class="py-20 bg-gray-50">
         <div class="max-w-7xl mx-auto px-6 text-center">
-            <h4 data-aos="fade-down" class="text-yellow-500 text-sm font-semibold mb-2">JASA SONDIR SAHABAT GEOTEKNIK</h4>
-            <h2 data-aos="fade-up" class="text-3xl md:text-4xl font-bold mb-10">Layanan Lengkap untuk Kebutuhan Geoteknik Anda</h2>
+            <h4 data-aos="fade-down" class="text-yellow-500 text-sm font-semibold mb-2">JASA SONDIR SAHABAT GEOTEKNIK
+            </h4>
+            <h2 data-aos="fade-up" class="text-3xl md:text-4xl font-bold mb-10">Layanan Lengkap untuk Kebutuhan
+                Geoteknik Anda</h2>
 
             <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
                 <!-- Layanan 1 -->
-                <div data-aos="fade-up" data-aos-duration="400" class="bg-white rounded-xl shadow hover:shadow-lg transition">
+                <div data-aos="fade-up" data-aos-duration="400"
+                    class="bg-white rounded-xl shadow hover:shadow-lg transition">
                     <img src="/assets/image/services/services2.avif" alt="Jasa Survey Topografi" class="rounded-t-xl">
                     <div class="p-6 text-left">
                         <h3 class="text-lg font-semibold mb-2">Jasa Survey Topografi</h3>
                         <p class="text-sm text-gray-600 mb-4">
-                            Survey topografi dilakukan dengan cepat dan akurat untuk mendukung efisiensi waktu dalam setiap proyek konstruksi.
+                            Survey topografi dilakukan dengan cepat dan akurat untuk mendukung efisiensi waktu dalam
+                            setiap proyek konstruksi.
                         </p>
                         <p class="text-xs text-gray-500 mb-4">
                             Hasil pengukuran dituangkan dalam peta kontur presisi sebagai dasar perencanaan proyek.
@@ -385,7 +402,8 @@
                 </div>
 
                 <!-- Layanan 2 -->
-                <div data-aos="fade-up" data-aos-duration="600" class="bg-white rounded-xl shadow hover:shadow-lg transition">
+                <div data-aos="fade-up" data-aos-duration="600"
+                    class="bg-white rounded-xl shadow hover:shadow-lg transition">
                     <img src="/assets/image/services/services2.avif" alt="Jasa Sondir CPT" class="rounded-t-xl">
                     <div class="p-6 text-left">
                         <h3 class="text-lg font-semibold mb-2">Jasa Sondir CPT</h3>
@@ -404,7 +422,8 @@
                 </div>
 
                 <!-- Layanan 3 -->
-                <div data-aos="fade-up" data-aos-duration="800" class="bg-white rounded-xl shadow hover:shadow-lg transition">
+                <div data-aos="fade-up" data-aos-duration="800"
+                    class="bg-white rounded-xl shadow hover:shadow-lg transition">
                     <img src="/assets/image/services/services1.avif" alt="Jasa Boring SPT" class="rounded-t-xl">
                     <div class="p-6 text-left">
                         <h3 class="text-lg font-semibold mb-2">Jasa Boring SPT</h3>
@@ -422,7 +441,8 @@
                 </div>
 
                 <!-- Layanan 4 -->
-                <div data-aos="fade-up" data-aos-duration="1000" class="bg-white rounded-xl shadow hover:shadow-lg transition">
+                <div data-aos="fade-up" data-aos-duration="1000"
+                    class="bg-white rounded-xl shadow hover:shadow-lg transition">
                     <img src="/assets/image/services/services3.avif" alt="Jasa Batimetri" class="rounded-t-xl">
                     <div class="p-6 text-left">
                         <h3 class="text-lg font-semibold mb-2">Jasa Batimetri</h3>
@@ -481,7 +501,8 @@
             <!-- <h4 class="text-yellow-500 text-sm font-semibold mb-2">SAHABAT GEOTEKNIK</h4> -->
             <h2 data-aos="fade-down" class="text-3xl md:text-4xl font-bold mb-10">Kenapa Memilih Kami</h2>
             <div class="grid grid-cols-2 lg:grid-cols-3 gap-10">
-                <div data-aos="fade-up" data-aos-duration="400" class="bg-blue-900 p-6 rounded-xl shadow-lg hover:-translate-y-2 transition-all duration-300">
+                <div data-aos="fade-up" data-aos-duration="400"
+                    class="bg-blue-900 p-6 rounded-xl shadow-lg hover:-translate-y-2 transition-all duration-300">
                     <div class="-mt-20 p-5 bg-yellow-400 rounded-full text-center inline-block">
                         <i data-lucide="biceps-flexed" class="w-7 h-7 text-blue-900"></i>
                     </div>
@@ -490,7 +511,8 @@
                         investigasi tanah, dan hidrografi yang berpengalaman dalam berbagai proyek skala kecil hingga
                         besar.</p>
                 </div>
-                <div data-aos="fade-up" data-aos-duration="600" class="bg-blue-900 p-6 rounded-xl shadow-lg hover:-translate-y-2 transition-all duration-300">
+                <div data-aos="fade-up" data-aos-duration="600"
+                    class="bg-blue-900 p-6 rounded-xl shadow-lg hover:-translate-y-2 transition-all duration-300">
                     <div class="-mt-20 p-5 bg-yellow-400 rounded-full text-center inline-block">
                         <i data-lucide="monitor-check" class="w-7 h-7 text-blue-900"></i>
                     </div>
@@ -498,7 +520,8 @@
                     <p class="text-white text-sm">Kami menggunakan teknologi dan peralatan terkini untuk memastikan
                         setiap hasil pengukuran dan analisis memiliki tingkat akurasi tinggi.</p>
                 </div>
-                <div data-aos="fade-up" data-aos-duration="800" class="bg-blue-900 p-6 rounded-xl shadow-lg hover:-translate-y-2 transition-all duration-300">
+                <div data-aos="fade-up" data-aos-duration="800"
+                    class="bg-blue-900 p-6 rounded-xl shadow-lg hover:-translate-y-2 transition-all duration-300">
                     <div class="-mt-20 p-5 bg-yellow-400 rounded-full text-center inline-block">
                         <i data-lucide="alarm-clock-check" class="w-7 h-7 text-blue-900"></i>
                     </div>
@@ -506,7 +529,8 @@
                     <p class="text-white text-sm">Kami berkomitmen memberikan hasil kerja terbaik dengan ketepatan waktu
                         sesuai kebutuhan proyek tanpa mengurangi kualitas.</p>
                 </div>
-                <div data-aos="fade-up" data-aos-duration="400" class="bg-blue-900 p-6 rounded-xl shadow-lg hover:-translate-y-2 transition-all duration-300">
+                <div data-aos="fade-up" data-aos-duration="400"
+                    class="bg-blue-900 p-6 rounded-xl shadow-lg hover:-translate-y-2 transition-all duration-300">
                     <div class="-mt-20 p-5 bg-yellow-400 rounded-full text-center inline-block">
                         <i data-lucide="hard-hat" class="w-7 h-7 text-blue-900"></i>
                     </div>
@@ -516,7 +540,8 @@
                         prioritas utama dalam setiap pekerjaan yang kami lakukan.
                     </p>
                 </div>
-                <div data-aos="fade-up" data-aos-duration="600" class="bg-blue-900 p-6 rounded-xl shadow-lg hover:-translate-y-2 transition-all duration-300">
+                <div data-aos="fade-up" data-aos-duration="600"
+                    class="bg-blue-900 p-6 rounded-xl shadow-lg hover:-translate-y-2 transition-all duration-300">
                     <div class="-mt-20 p-5 bg-yellow-400 rounded-full text-center inline-block">
                         <i data-lucide="hand-platter" class="w-7 h-7 text-blue-900"></i>
                     </div>
@@ -526,7 +551,8 @@
                         memastikan kepuasan klien dari awal hingga akhir proyek.
                     </p>
                 </div>
-                <div data-aos="fade-up" data-aos-duration="800" class="bg-blue-900 p-6 rounded-xl shadow-lg hover:-translate-y-2 transition-all duration-300">
+                <div data-aos="fade-up" data-aos-duration="800"
+                    class="bg-blue-900 p-6 rounded-xl shadow-lg hover:-translate-y-2 transition-all duration-300">
                     <div class="-mt-20 p-5 bg-yellow-400 rounded-full text-center inline-block">
                         <i data-lucide="wallet" class="w-7 h-7 text-blue-900"></i>
                     </div>
@@ -548,7 +574,7 @@
                 Kami siap menjadi mitra Anda dalam setiap proyek geoteknik, sondir, dan topografi di seluruh Indonesia.
             </p>
             <div data-aos="fade-up">
-                <a  href="https://wa.me/6287719777534" target="_blank"
+                <a href="https://wa.me/6287719777534" target="_blank"
                     class="bg-yellow-400 hover:bg-yellow-300 text-black font-semibold px-6 py-3 rounded-lg transition">
                     Hubungi Kami Sekarang
                 </a>
@@ -627,7 +653,7 @@
         </div>
 
         <!-- Garis -->
-        <div  class="border-t border-gray-700 mt-12 pt-6 text-center text-sm text-gray-400">
+        <div class="border-t border-gray-700 mt-12 pt-6 text-center text-sm text-gray-400">
             <p class="text-sm text-gray-300 text-center">
                 © 2025 Saudara Geoteknik. Crafted with passion & code by <a href="https://hendikaseptio.my.id"
                     target="_blank" class="font-semibold text-yellow-400">Hendika Septio</a>.
