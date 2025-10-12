@@ -33,6 +33,20 @@
     <meta property="og:url" content="https://saudarageoteknik.my.id/layanan/sondir-cpt" />
     <meta property="og:image" content="https://saudarageoteknik.my.id/assets/image/seo/sondir-cpt-og.jpg" />
 
+    <!-- csp -->
+    <meta http-equiv="Content-Security-Policy" content="
+        default-src 'self';
+        script-src 'self' https://unpkg.com https://cdn.tailwindcss.com https://cdn.jsdelivr.net https://saudarageoteknik.my.id 'unsafe-inline' 'unsafe-eval';
+        style-src 'self' https://unpkg.com https://cdn.jsdelivr.net https://fonts.googleapis.com 'unsafe-inline';
+        img-src 'self' https://saudarageoteknik.my.id https://images.unsplash.com https://plus.unsplash.com/ data:;
+        font-src 'self' data:;
+        connect-src 'none' ws://127.0.0.1:5500 https://saudarageoteknik.my.id;
+        object-src 'none';
+        frame-src 'none' https://www.google.com/maps/embed;
+        base-uri 'self';
+        form-action 'self';
+    ">
+    
     <!-- AOS & Tailwind -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <script src="https://cdn.tailwindcss.com"></script>

@@ -41,6 +41,20 @@
         content="Melayani jasa sondir, boring, dan topografi dengan hasil cepat dan presisi.">
     <meta name="twitter:image" content="https://saudarageoteknik.my.id/assets/image/seo/twitter-card.jpg">
 
+    <!-- csp -->
+    <meta http-equiv="Content-Security-Policy" content="
+        default-src 'self';
+        script-src 'self' https://unpkg.com https://cdn.tailwindcss.com https://cdn.jsdelivr.net https://saudarageoteknik.my.id 'unsafe-inline' 'unsafe-eval';
+        style-src 'self' https://unpkg.com https://cdn.jsdelivr.net https://fonts.googleapis.com 'unsafe-inline';
+        img-src 'self' https://saudarageoteknik.my.id https://images.unsplash.com https://plus.unsplash.com/ data:;
+        font-src 'self' data:;
+        connect-src 'none' ws://127.0.0.1:5500 https://saudarageoteknik.my.id;
+        object-src 'none';
+        frame-src 'none' https://www.google.com/maps/embed;
+        base-uri 'self';
+        form-action 'self';
+    ">
+  
     <!-- Schema.org (Structured Data for SEO) -->
     <script type="application/ld+json">
     {
@@ -334,7 +348,6 @@
     </footer>
 
     <script src="https://saudarageoteknik.my.id/assets/js/main.js"></script>
-    <script src="https://saudarageoteknik.my.id/assets/js/client.js"></script>
 
 </body>
 
