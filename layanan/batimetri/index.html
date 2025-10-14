@@ -2,6 +2,7 @@
 <html lang="id" class="scroll-smooth">
 
 <head>
+    <!-- Charset & Viewport -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
@@ -34,9 +35,41 @@
     <meta property="og:description"
         content="Layanan barimetri untuk pemetaan kontur dasar perairan dan pengukuran kedalaman menggunakan alat presisi tinggi." />
     <meta property="og:url" content="https://saudarageoteknik.my.id/layanan/barimetri" />
-    <meta property="og:image" content="https://saudarageoteknik.my.id/assets/image/seo/barimetri-og.jpg" />
+    <meta property="og:image" content="https://saudarageoteknik.my.id/assets/services3.avif" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
 
-    <!-- csp -->
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Saudara Geoteknik - Jasa Sondir Bekasi Profesional" />
+    <meta name="twitter:description"
+        content="Melayani jasa sondir, boring, dan topografi dengan hasil cepat dan presisi." />
+    <meta name="twitter:url" content="https://saudarageoteknik.my.id/" />
+    <meta name="twitter:image" content="https://saudarageoteknik.my.id/assets/services3.avif" />
+
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Saudara Geoteknik",
+        "url": "https://saudarageoteknik.my.id/",
+        "logo": "https://saudarageoteknik.my.id/assets/image/logo/logo-color.avif",
+        "sameAs": [
+            "https://www.facebook.com/share/1D1nXo5rsU/",
+            "https://www.instagram.com/gusion_2528?igsh=MWNiZWVtcmV3bzFzdg==",
+        ],
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+6287719777534",
+            "contactType": "customer service",
+            "areaServed": "ID",
+            "availableLanguage": ["Indonesian"]
+        }
+    }
+    </script>
+
+    <!-- Content Security Policy -->
     <meta http-equiv="Content-Security-Policy" content="
         default-src 'self';
         script-src 'self' https://static.cloudflareinsights.com https://unpkg.com https://cdn.tailwindcss.com https://cdn.jsdelivr.net https://saudarageoteknik.my.id 'unsafe-inline' 'unsafe-eval';
@@ -49,14 +82,19 @@
         base-uri 'self';
         form-action 'self';
     ">
-    <script defer src="https://static.cloudflareinsights.com/beacon.min.js"
-        data-cf-beacon="{'token': '9601e767b34d40998b53097a6a1de3c5'}"></script>
-    
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    !-- External Styles -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Icon & Animation Libraries -->
     <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Cloudflare Insights -->
+    <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "9601e767b34d40998b53097a6a1de3c5"}'></script>
 </head>
 
 <body class="font-sans text-gray-800">
@@ -65,8 +103,8 @@
 
             <!-- LOGO -->
             <div class="flex items-center gap-3">
-                <img src="https://saudarageoteknik.my.id/assets/image/logo/logo-color.avif"
-                    alt="SAUDARA GEOTEKNIK" class="w-20 h-auto">
+                <img src="https://saudarageoteknik.my.id/assets/image/logo/logo-color.avif" alt="SAUDARA GEOTEKNIK"
+                    class="w-20 h-auto">
                 <div class="block md:hidden lg:block">
                     <h1 class="font-bold text-lg">SAUDARA GEOTEKNIK</h1>
                     <p class="text-xs text-gray-500">TOPOGRAFI • SOIL INVESTIGATION • OSEANOGRAFI</p>
@@ -271,11 +309,13 @@
                     terpercaya di Indonesia.
                 </p>
                 <div class="flex gap-4 text-lg">
-                    <a href="https://www.facebook.com/share/1D1nXo5rsU/" aria-label="kunjungi facebook kami" target="_blank"
+                    <a href="https://www.facebook.com/share/1D1nXo5rsU/" aria-label="kunjungi facebook kami"
+                        target="_blank"
                         class="bg-yellow-400 hover:bg-yellow-300 text-black rounded-full p-2 transition">
                         <i data-lucide="facebook" class="w-4 h-4 text-blue-900"></i>
                     </a>
-                    <a href="https://www.instagram.com/gusion_2528?igsh=MWNiZWVtcmV3bzFzdg==" aria-label="kunjungi instagram kami" target="_blank"
+                    <a href="https://www.instagram.com/gusion_2528?igsh=MWNiZWVtcmV3bzFzdg=="
+                        aria-label="kunjungi instagram kami" target="_blank"
                         class="bg-yellow-400 hover:bg-yellow-300 text-black rounded-full p-2 transition">
                         <i data-lucide="instagram" class="w-4 h-4 text-blue-900"></i>
                     </a>

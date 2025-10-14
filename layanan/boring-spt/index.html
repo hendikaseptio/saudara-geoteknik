@@ -2,6 +2,7 @@
 <html lang="id" class="scroll-smooth">
 
 <head>
+    <!-- Charset & Viewport -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
@@ -11,7 +12,7 @@
     <meta name="description"
         content="Saudara Geoteknik menyediakan layanan Boring SPT (Standard Penetration Test) profesional untuk analisis lapisan tanah, kekuatan, dan daya dukung pondasi di Bekasi dan seluruh Indonesia." />
     <meta name="keywords"
-        content="jasa boring spt, boring tanah, uji spt, standard penetration test, jasa geoteknik bekasi, uji tanah jakarta, sahabat geoteknik" />
+        content="jasa boring spt, boring tanah, uji spt, standard penetration test, jasa geoteknik bekasi, uji tanah Bekasi, sahabat geoteknik" />
     <meta name="language" content="id" />
     <meta name="author" content="Hendika Septio" />
 
@@ -34,7 +35,7 @@
     <meta property="og:description"
         content="Layanan Boring SPT (Standard Penetration Test) profesional untuk mengetahui kondisi lapisan tanah, kekuatan, dan daya dukung pondasi bangunan." />
     <meta property="og:url" content="https://saudarageoteknik.my.id/layanan/boring-spt" />
-    <meta property="og:image" content="https://saudarageoteknik.my.id/assets/image/seo/boring-spt-og.jpg" />
+    <meta property="og:image" content="https://saudarageoteknik.my.id/assets/services3.avif" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
 
@@ -44,7 +45,29 @@
     <meta name="twitter:title" content="Jasa Boring SPT Profesional & Akurat di Bekasi" />
     <meta name="twitter:description"
         content="Saudara Geoteknik menyediakan jasa Boring SPT profesional dengan hasil akurat dan cepat di Bekasi dan seluruh Indonesia." />
-    <meta name="twitter:image" content="https://saudarageoteknik.my.id/assets/image/seo/boring-spt-twitter.jpg" />
+    <meta name="twitter:image" content="https://saudarageoteknik.my.id/assets/services3.avif" />
+
+    <!-- Structured Data (Schema.org) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Saudara Geoteknik",
+        "url": "https://saudarageoteknik.my.id/layanan/boring-spt",
+        "logo": "https://saudarageoteknik.my.id/assets/image/logo/logo-color.avif",
+        "sameAs": [
+            "https://www.facebook.com/share/1D1nXo5rsU/",
+            "https://www.instagram.com/gusion_2528?igsh=MWNiZWVtcmV3bzFzdg==",
+        ],
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+6287719777534",
+            "contactType": "customer service",
+            "areaServed": "ID",
+            "availableLanguage": ["Indonesian"]
+        }
+    }
+  </script>
 
     <!-- csp -->
     <meta http-equiv="Content-Security-Policy" content="
@@ -60,39 +83,20 @@
         form-action 'self';
     ">
 
-    <!-- Structured Data (Schema.org) -->
-    <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Service",
-    "name": "Jasa Boring SPT",
-    "serviceType": "Standard Penetration Test (SPT)",
-    "provider": {
-      "@type": "Organization",
-      "name": "Saudara Geoteknik",
-      "url": "https://saudarageoteknik.my.id",
-      "logo": "https://saudarageoteknik.my.id/assets/image/logo/logo-color.avif",
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "telephone": "+6287719777534",
-        "contactType": "customer service",
-        "areaServed": "ID",
-        "availableLanguage": ["Indonesian"]
-      }
-    },
-    "areaServed": "Bekasi, Indonesia",
-    "description": "Jasa Boring SPT profesional dan akurat untuk analisis lapisan tanah serta daya dukung pondasi bangunan.",
-    "image": "https://saudarageoteknik.my.id/assets/image/seo/boring-spt-og.jpg"
-  }
-  </script>
-    <script defer src="https://static.cloudflareinsights.com/beacon.min.js"
-        data-cf-beacon="{'token': '9601e767b34d40998b53097a6a1de3c5'}"></script>
-    
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- External Styles -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Icon & Animation Libraries -->
     <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Cloudflare Insights -->
+    <script defer src="https://static.cloudflareinsights.com/beacon.min.js"
+        data-cf-beacon='{"token": "9601e767b34d40998b53097a6a1de3c5"}'></script>
 </head>
 
 
@@ -102,8 +106,8 @@
 
             <!-- LOGO -->
             <div class="flex items-center gap-3">
-                <img src="https://saudarageoteknik.my.id/assets/image/logo/logo-color.avif"
-                    alt="SAUDARA GEOTEKNIK" class="w-20 h-auto">
+                <img src="https://saudarageoteknik.my.id/assets/image/logo/logo-color.avif" alt="SAUDARA GEOTEKNIK"
+                    class="w-20 h-auto">
                 <div class="block md:hidden lg:block">
                     <h1 class="font-bold text-lg">SAUDARA GEOTEKNIK</h1>
                     <p class="text-xs text-gray-500">TOPOGRAFI • SOIL INVESTIGATION • OSEANOGRAFI</p>
@@ -321,11 +325,13 @@
                     terpercaya di Indonesia.
                 </p>
                 <div class="flex gap-4 text-lg">
-                    <a href="https://www.facebook.com/share/1D1nXo5rsU/" aria-label="kunjungi facebook kami" target="_blank"
+                    <a href="https://www.facebook.com/share/1D1nXo5rsU/" aria-label="kunjungi facebook kami"
+                        target="_blank"
                         class="bg-yellow-400 hover:bg-yellow-300 text-black rounded-full p-2 transition">
                         <i data-lucide="facebook" class="w-4 h-4 text-blue-900"></i>
                     </a>
-                    <a href="https://www.instagram.com/gusion_2528?igsh=MWNiZWVtcmV3bzFzdg==" aria-label="kunjungi instagram kami" target="_blank"
+                    <a href="https://www.instagram.com/gusion_2528?igsh=MWNiZWVtcmV3bzFzdg=="
+                        aria-label="kunjungi instagram kami" target="_blank"
                         class="bg-yellow-400 hover:bg-yellow-300 text-black rounded-full p-2 transition">
                         <i data-lucide="instagram" class="w-4 h-4 text-blue-900"></i>
                     </a>
